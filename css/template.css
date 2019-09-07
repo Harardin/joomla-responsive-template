@@ -1,0 +1,298 @@
+/* Основные настройки */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img, iframe, video, embed {
+max-width:100%!important;
+}
+
+/* ------------- */
+
+/* Настройки хедера */
+header{
+    max-width: 100%;
+    background-color: #303f9f;
+    text-align: center;
+}
+#headerContainer{
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+/* Стиль логотипа */
+#logo{
+    display: inline-block;
+    padding: 12px;
+}
+.logoImg{
+    display: inline-block;
+}
+.customlogoText{
+    display: inline-block;
+    position: relative;
+    padding-left: 0.1em;
+    bottom: 0.5em;
+    /* Настройки шрифта */
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+/* Телефон */
+#telphone{
+    display: inline-block;
+    padding-left: 10px;
+}
+.phnImg{
+    display: inline-block;
+    position: relative;
+    bottom: 0.9em;
+}
+.customphone{
+    display: inline-block;
+    position: relative;
+    padding-left: 0.2em;
+    bottom: 1.4em;
+}
+.customphone a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+
+/* Эмейл */
+#email{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 1.2em;
+}
+.emailImg{
+    display: inline-block;
+}
+.customemailLink{
+    display: inline-block;
+    position: relative;
+    padding-left: 0.2em;
+    bottom: 0.2em;
+}
+.customemailLink a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+
+/* Местоположение */
+#location{
+    display: inline-block;
+    padding-left: 10px;
+    position: relative;
+    bottom: 0.9em;
+}
+.locationImg{
+    display: inline-block;
+}
+.customAddress{
+    display: inline-block;
+    padding-left: 10px;
+    position: relative;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* ------------- */
+
+/* Настройки меню */
+#menuContainer{
+    background-color: #2196f3;
+    display: inline-block;
+    width: 100%;
+}
+#menu{
+    width: 95%;
+    margin: auto;
+}
+#menu ul li{
+    list-style: none;
+    float: left;
+}
+#menu ul li a{
+    display: block;
+    font-size: 1.2em;
+    color: black;
+    padding: 1.0em 40px;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    background-color: yellow;
+}
+/* Настройки мобильного меню */
+@media screen and (max-width: 400px){
+    #menuContainer.topmenu{
+        height: 2.5em;
+        background: #2196f3 url(../images/menuicon.png) no-repeat center left 2%;
+        cursor: pointer;
+    }
+    #menuContainer.topmenu ul li{
+        display: none;
+    }
+    #menuContainer.mobilemenu{
+        background: #2196f3 url(../images/menuicon.png) no-repeat top 1em left 2%;
+        cursor: pointer;
+        transition: 1s;
+    }
+    #menuContainer.mobilemenu ul{
+        width: 90%;
+        padding: 0 0 0 5%;
+    }
+    #menuContainer.mobilemenu ul>ul{
+        padding: 0;
+    }
+}
+
+/* Cкрывающиеся пункты меню */
+#menu ul li > ul{
+    display: none;
+}
+#menu ul li > ul li{
+    float: none;
+}
+#menu ul li:hover > ul{
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    background-color: #2196f3;
+}
+
+/* ------------ */
+
+/* Настройки контента */
+.contentContainer{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+}
+@media screen and (min-width: 1000px)
+{
+    #text{
+        display: inline-block;
+        width: 70%;
+        vertical-align: top;
+        padding: 0 0.4em 0 0.4em;
+    }
+    #sidebar{
+        display: inline-block;
+        background-color: #b2ebf2;
+        width: 25%;
+        vertical-align: top;
+        padding: 0 0.8em 0 0.8em;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    #text{
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.2em;
+    }
+    #sidebar{
+        display: inline-block;
+        background-color: #b2ebf2;
+        vertical-align: top;
+        padding: 0.3em;
+    }
+}
+/* Making modules */
+.moduletableSidebar, .moduletable-form{
+    display: block;
+    font-size: 1.1em;
+    background-color: #26a69a;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    padding: 0.8em;
+    border: solid #01579b;
+}
+.btn{
+    background-color: #0277bd;
+    font-size: 1.1em;
+    padding: 0.3em;
+    border: none;
+    border-radius: 0.5em;
+}
+.btn:hover{
+    transition: 0.3s;
+    background-color: #b2ebf2;
+}
+
+/* Настройки хлебных крошек */
+#breadcrumbs{
+    background: lightyellow;
+    padding: 0.5em;
+    overflow: hidden;
+    margin-bottom: 1.2em;
+}
+#breadcrumbs ul li{
+    float: left;
+    list-style: none;
+}
+/* Настройки блока с контентом */
+#text{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Настройки модуля с партнерами */
+#partnersContainer{
+    display: block;
+    padding-top: 1.0em;
+}
+.customPartner{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+.customPartner img{
+    width: 35%;
+}
+
+/* ------------ */
+/* Настойки футера */
+footer{
+    width: 100%;
+    background-color: darkblue;
+}
+#footerContainer{
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding-top: 2.5em;
+}
+#companyInfoContainer{
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.2em;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+/* Нижняя линия футера с политикой и прочим */
+#bottomLine{
+    background-color: black;
+    width: 100%;
+}
+#bottomLine span{
+    color: white;
+}
+
+/* This is for hiding contact form */
+.accordion-heading{
+    display: none;
+}
